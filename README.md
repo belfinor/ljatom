@@ -50,4 +50,6 @@ type Entry struct {
 }
 ```
 
+Content is HTML.
+
 Moreover, *ljatom.Read* makes reconnect if connection is broken. All you need is read chan of Entry objects.
