@@ -37,6 +37,23 @@ func main() {
 
 and wait some times. The atom stream returns data by chunks.
 
+Application print result like this:
+
+```
+Time: 2019-11-21 20:57:07 +0000 UTC
+Journal: faded_fae
+Post URL: https://faded-fae.livejournal.com/967096.html
+Post title:
+Post body: <p>Fandom: DuckTales (2017)</p>
+<p>Canon or AU: AUx3<br>Fic: Kings and Queens</p>
+<p>A/N: I am working on other fics, I promise you. XD I’m also trying to balance that with the new Pokemon game and reading my book, which is awesome.&nbsp;</p>
+<p>Oh, on a more serious note--Lena won’t be in this. Otherwise, Webby would be distracted by her. So, uh, in this universe, I guess Lena doesn’t exist? Sorry, Lena. ^^;</p>
+<p>------</p>
+<a name="cutid1"></a>
+<p>It had taken Wren...
+
+```
+
 *ljatom.Read* return chan of *Entry* refs.  Each *Entry* object has following structure:
 
 ```go
