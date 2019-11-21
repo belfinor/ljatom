@@ -1,3 +1,5 @@
+# Summary
+
 ljatom reads new public posts from LiveJournal via public atom stream interface.
 
 # Install
