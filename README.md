@@ -16,22 +16,22 @@ All you need is:
 package main
 
 import (
-	"fmt"
+  "fmt"
 
-	"github.com/belfinor/ljatom"
+  "github.com/belfinor/ljatom"
 )
 
 func main() {
 
-	for msg := range ljatom.Read() {
+  for msg := range ljatom.Read() {
 
-		fmt.Println("Time: " + msg.Created.String())
-		fmt.Println("Journal: " + msg.Journal)
-		fmt.Println("Post URL: " + msg.Url)
-		fmt.Println("Post title: " + msg.Title)
-		fmt.Print("Post body: " + msg.Content + "\n\n\n")
+    fmt.Println("Time: " + msg.Created.String())
+    fmt.Println("Journal: " + msg.Journal)
+    fmt.Println("Post URL: " + msg.Url)
+    fmt.Println("Post title: " + msg.Title)
+    fmt.Print("Post body: " + msg.Content + "\n\n\n")
 
-	}
+  }
 }
 ```
 
@@ -59,12 +59,12 @@ distracted by her. So, uh, in this universe, I guess Lena doesn’t exist? Sorry
 
 ```go
 type Entry struct {
-	Journal      string
-	JournalTitle string
-	Url          string
-	Created      time.Time
-	Title        string
-	Content      string
+  Journal      string
+  JournalTitle string
+  Url          string
+  Created      time.Time
+  Title        string
+  Content      string
 }
 ```
 
